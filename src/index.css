@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+:root {
+  --very-light-gray:hsl(0, 0%, 98%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.background {
+  background-color: var(--very-light-gray);
+}

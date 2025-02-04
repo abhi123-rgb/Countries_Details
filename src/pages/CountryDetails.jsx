@@ -10,11 +10,11 @@ const CountryDetails = ({ data }) => {
 
   return (
     <>
-      <section className='w-[90%] pt-4 m-auto h-svh'>
+      <section className='w-[90%] max-w-[1100px] pt-4 m-auto h-svh'>
         <Link to="/" className='px-6 py-2 bg-white my-4 shadow-md rounded-md text-base inline-flex items-center '><ion-icon name="arrow-back-outline" ></ion-icon>Back</Link>
-        <div className='py-10 min-[625px]:gap-10 min-[950px]:flex min-[1200px]:gap-25 min-[950px]:items-center'>
+        <div className='py-5 min-[625px]:py-10 min-[625px]:gap-10 min-[950px]:flex min-[1200px]:gap-25 min-[950px]:items-center'>
           <div className='min-[620px]:flex-1'>
-            <img src={data.flag} alt="" className=' py-4 ' />
+            <img src={data.flag} alt="" className=' py-4 w-full' />
           </div>
 
           <div className='flex-1'>

@@ -32,17 +32,17 @@ const Home = ({ selectedRegion }) => {
 
   return (
     <>
-      <div className='w-[90%] m-auto'>
-        <div className='flex justify-between items-center py-2 flex-col min-[620px]:flex-row'>
+      <main className='w-[90%] max-w-[1100px] m-auto'>
+        <div className='flex justify-between items-center py-2 max-[620px]:flex-col max-[620px]:mb-8'>
           <SearchBar onChange={Search} search={search} />
           <FilterSearch onchange={filterSearch} filterRegion={filterRegion} />
         </div>
-        <div className='mt-4 grid grid-cols-1 gap-10 min-[620px]:grid-cols-2 min-[920px]:grid-cols-3 min-[1200px]:grid-cols-4 '>
-          {record ? record.map((data) =>
+        <div className='mt-4 grid grid-cols-1 gap-8 min-[620px]:grid-cols-2 min-[920px]:grid-cols-3 min-[1200px]:grid-cols-4 '>
+          {record != '' ? record.map((data) =>
             <CountriesCard key={data.name} selectedRegion={selectedRegion} data={data} />
           ) : (<p className='text-xl'>"No Countries Found"</p>)}
         </div>
-      </div>
+      </main>
     </>
   )
 }

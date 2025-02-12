@@ -1,8 +1,7 @@
 # Countries_Details
 
 ## Snap of project
-<hr />
 
-- [](/public/Screenshot_2.png) 
+ ![image_1](/public/Screenshot_2.png) 
 
-- [](/public/Screenshot_1.png) 
+ ![image_2](/public/Screenshot_1.png) 

@@ -20,8 +20,8 @@ const Home = ({ selectedRegion }) => {
   }
 
   useEffect(() => {
-    const result = debouncedSearch ? datas.filter((data) =>
-      data.name.toLowerCase().includes(debouncedSearch)
+    const result = debouncedSearch ? datas.filter((data) => 
+      data.name.toLowerCase().includes(debouncedSearch.toLowerCase())
     ) : filterRegion ? datas.filter((data) =>
       data.region == filterRegion
     ) : datas;
